@@ -76,21 +76,21 @@
           
             
               <li class="category-list-container">
-                <a href="javascript:;">類別</a>
-                
+                <a href="javascript:;">分类</a>
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Daily/">Daily</a><span class="category-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="tag-list-container">
-                <a href="javascript:;">標籤</a>
-                
+                <a href="javascript:;">标签</a>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/">life</a><span class="tag-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
-                <a href="javascript:;">彙整</a>
+                <a href="javascript:;">归档</a>
                 <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a><span class="archive-list-count">2</span></li></ul>
               </li>
             
@@ -130,26 +130,66 @@
 
     <div class="post-list-item article">
       <h3 class="article-header">
-        <a href="/2016/08/21/today/" >
-  today
+        <a href="/2016/08/21/Today/" >
+  Today
 </a>
 
       </h3>
       
 
       <div class="article-info">
-        <a href="/2016/08/21/today/"><span class="article-date">
+        <a href="/2016/08/21/Today/"><span class="article-date">
   2016-08-21
 </span>
 </a>
         
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Daily/">Daily</a></li></ul>
+	</span>
+
 
         
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/life/">life</a></li></ul>
+	</span>
+
 
       </div>
       <div class="article-entry">
         
-          
+          <p>   本意只是想看看node.js，却用这个搭建了个独立博客，果然是个圈。</p>
+<ol>
+<li>Windows ENV</li>
+<li>download node.js</li>
+<li>download git bash</li>
+<li>get an gitHub account</li>
+</ol>
+<p>   steps at gitHub</p>
+<ol>
+<li>create a git repo:仓库名必须和git account name一致<br>eg: <a href="https://github.com/yourname/yourname.github.io" target="_blank" rel="external">https://github.com/yourname/yourname.github.io</a></li>
+<li>go to above repo setting, select master branch and save under “Source”</li>
+<li><p>Get you publishied pages<br>eg: <a href="https://yourname.github.io/" target="_blank" rel="external">https://yourname.github.io/</a></p>
+<p>steps at localhost</p>
+</li>
+<li>open cmd dialog</li>
+<li>install Hexo: npm install -g hexo</li>
+<li>select a directory as your project workplace</li>
+<li>cd into above directory</li>
+<li>初始化：hexo init</li>
+<li>生成静态页面: hexo g</li>
+<li>启动本地服务: hexo s</li>
+<li><p>访问 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
+<p>steps 关联本地和gitHub</p>
+</li>
+<li>find “_config.yml” your local project workplace directory</li>
+<li>update “_config.yml” with following:<br>deploy:<br>type: git<br>repo: <a href="https://github.com/yourname/yourname.github.io" target="_blank" rel="external">https://github.com/yourname/yourname.github.io</a><br>branch: master</li>
+<li>install hexo-deployer-git –save</li>
+<li>hexo d</li>
+<li><p>访问 <a href="http://yourname.github.io/" target="_blank" rel="external">http://yourname.github.io/</a></p>
+<p>补充步骤：每次部署的步骤，可按以下命令来进行。<br>hexo clean<br>hexo g -d</p>
+</li>
+</ol>
+
         
       </div>
     </div>
